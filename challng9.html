@@ -1,0 +1,49 @@
+<script>
+        class FlyingCat {
+            constructor(name, color){
+                this.name = name
+                this.legs = 4
+                this.color = color
+            }
+            
+            getColor(){
+                console.log('My cat called '+this.name+ ' and '+' has a '+this.color+ ' color.' )
+            }
+            letTalk(){
+                console.log('My Dog has '+this.legs+ 'legs '+'and a '+this.color+' color that is why i called '+this.name+'.')
+            }
+        }
+        
+        class Dog extends FlyingCat{
+            constructor(name, color){
+                //passing the name and color to super, which will call the parent constructor
+                super(name, color)
+            }
+            
+            flyingDistance(){ //a dog can bark, this maybe one of the special things about dogs
+            
+                console.log(this.name+' is really hungry.')
+            }
+        }
+        
+        class Cat extends FlyingCat{
+            constructor(name, color){
+                super(name, color)
+            }
+            
+            fly(){
+                console.log(this.name+ ' is very happy.')
+            }
+        }
+        
+        console.log('====================First Animal =====================')
+        var Lucky = new Dog('Lucky', 'white')
+        Lucky.letTalk()
+        Lucky.flyingDistance()
+        
+        console.log('====================2nd Animal =====================')
+        var Lex = new Cat('Lex', 'orange')
+        Lex.getColor()
+        Lex.fly()
+        
+            </script>

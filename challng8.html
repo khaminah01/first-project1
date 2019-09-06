@@ -1,0 +1,24 @@
+<script>
+
+        class Cat{
+          constructor(type){//setting 6 as the default number of windows
+            this.type = type
+          }
+          
+          moveForward(){
+            return 'Paws is really '+this.type+ '.'
+          }
+          getCatType(){
+            return 'Paws is very  '+this.type+ '.'
+          }
+        }
+
+        var yourCat = new Cat('hungry')
+        console.log(yourCat.moveForward())
+        
+        var hisCat = new Cat('happy')
+        console.log(hisCat.getCatType())
+        
+        
+        
+            </script>

@@ -1,0 +1,23 @@
+<script>
+        var makeplurals = (listOfThings) => {
+          var plurals = []; // the new array for plural things
+          for (var i = 0; i < listOfThings.length; i++) {
+            var plural = listOfThings[i]+ "s " ;
+            // add s
+            plurals.push(plural);
+            // push to the new array
+          }
+          return plurals; //return the newly created array.
+        }
+        
+        //let's call it
+        var list = ["Cat", "Cookie", "Cake"];
+        var newList = makeplurals(list);
+        console.log(newList); // ['things plural', '']
+        var readArray = (array) => {
+          for (var i = 0; i < array.length; i++) {
+            console.log(array[i]);
+          }
+        }
+        
+        </script>
